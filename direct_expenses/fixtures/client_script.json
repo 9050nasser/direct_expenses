@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Expenses",
+  "enabled": 1,
+  "modified": "2024-05-04 09:30:39.179029",
+  "module": "Direct Expenses",
+  "name": "expenses set query",
+  "script": "frappe.ui.form.on(\"Expenses\", \"onload\", function(frm) {\r\n    frm.set_query(\"account\", function() {\r\n        return {\r\n            \"filters\": [\r\n                [\"account_type\", \"in\", [\"Bank\", \"Cash\"]],\r\n                [\"is_group\", \"=\", 0]\r\n            ]\r\n        };\r\n    });\r\n});\r\n",
+  "view": "Form"
+ }
+]

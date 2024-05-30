@@ -7,6 +7,8 @@ app_license = "MIT"
 
 # Includes in <head>
 # ------------------
+fixtures = [{"doctype": "Client Script", "filters": [["module" , "in" , ("Direct Expenses" )]]},
+            {"doctype": "Server Script", "filters": [["module" , "in" , ("Direct Expenses" )]]}]
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/direct_expenses/css/direct_expenses.css"
